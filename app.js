@@ -35,4 +35,4 @@ app.get("/me", function () {
 app.post("/me/save", function () {
   routes.profile.saveProfile(req,res);
 })
-app.listen(1000);
+app.listen(8080);
