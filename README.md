@@ -1,7 +1,7 @@
 # dreamlist-cloud
 Запуск системы:
   ```
-    git clone git@github.com:KubSAU-DevClassroom/dreamlist-cloud.git -b develop
+    git clone https://github.com/KubSAU-DevClassroom/dreamlist-cloud.git -b develop
   ```
 далее в дириктории в которой находится проект выполните:
   ```
