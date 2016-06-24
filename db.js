@@ -11,8 +11,7 @@ exports.init = function (settings, callback) {
     callback && callback();
     console.log("Connected correctly to server");
   });
-
-}
+};
 
 
 
