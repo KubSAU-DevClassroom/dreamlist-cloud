@@ -13,7 +13,7 @@ exports.retrieveCategories = function (req, res) {
       data: categories
     });
   });
-}
+};
 
 exports.addCategory = function (req, res) {
   lib.addCategory({
@@ -31,7 +31,7 @@ exports.addCategory = function (req, res) {
       result: result.ops[0]
     });
   });
-}
+};
 
 
 exports.removeCategory = function (req, res) {
@@ -48,7 +48,7 @@ exports.removeCategory = function (req, res) {
         success: true
       });
     });
-}
+};
 
 
 exports.updateCategory = function (req, res) {
@@ -65,4 +65,4 @@ exports.updateCategory = function (req, res) {
         success: true
       });
     });
-}
+};
