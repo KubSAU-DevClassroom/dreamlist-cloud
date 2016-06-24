@@ -1,4 +1,5 @@
 var express = require("express");
+var path = require("path");
 var app = express();
 var db = require("./db");
 var settings = require("./settings");
@@ -38,4 +39,7 @@ app.get("/me", function () {
 app.post("/me/save", function () {
   routes.profile.saveProfile(req,res);
 });
+
+app.use("/", express.static(path.join(__dirname, "/static")));
+
 app.listen(8080);
