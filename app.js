@@ -3,6 +3,9 @@ var app = express();
 var db = require("./db");
 var settings = require("./settings");
 
+if (!process.env.NODE_ENV)
+  process.env.NODE_ENV="development";
+console.log("running in", process.env.NODE_ENV, "mode");
 db.init(settings[process.env.NODE_ENV].db);
 
 app.use(function (req, res, next) {
