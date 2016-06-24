@@ -7,6 +7,7 @@ function categoriesRetrieve () {
         var div = document.getElementById("categories");
         div.innerHTML = "";
         for (var i = 0, l = cats.length; i < l; i++) {
+            // избегай создания DOM-элементов как тут
             div.innerHTML += "<span>"+cats[i].name+"</span>";
         }
     };
