@@ -14,11 +14,11 @@ var routes = require("./routes");
 
 app.get("/categories", function (req, res) {
   routes.categories.retrieveCategories(req, res);
-})
+});
 
 app.post("/categories/add", function (req, res) {
   routes.categories.addCategory(req, res);
-})
+});
 
 app.post("/categories/remove", function (req, res) {
   routes.categories.removeCategory(req,res);
@@ -30,9 +30,9 @@ app.post("/categories/update", function (req, res) {
 
 app.get("/me", function () {
   routes.profile.retrieveProfile(req,res);
-})
+});
 
 app.post("/me/save", function () {
   routes.profile.saveProfile(req,res);
-})
+});
 app.listen(8080);
