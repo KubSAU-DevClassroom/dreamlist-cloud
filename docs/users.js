@@ -9,6 +9,7 @@ var users = {
     modified: types.Timestamp,
 
     name: { type: "string", maxLength: 80 },
-    description: { type: "string", maxLength: 120 }
+    description: { type: "string", maxLength: 120 },
+    avatar: { type: "string", maxLength: 255 }
   }
 };
