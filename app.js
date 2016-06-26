@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
 
 var routes = require("./routes");
 
-app.get("/categories", function (req, res) {
+app.get("/categories", function (req, res) {//добавить userId 
   routes.categories.retrieveCategories(req, res);
 });
 

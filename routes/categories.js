@@ -52,7 +52,6 @@ exports.removeCategory = function (req, res) {
     });
 };
 
-
 exports.updateCategory = function (req, res) {
     lib.updateCategory({
     //  modified: Date(),
