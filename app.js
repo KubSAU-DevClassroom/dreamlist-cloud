@@ -42,4 +42,6 @@ app.post("/me/save", function () {
 
 app.use("/", express.static(path.join(__dirname, "/static")));
 
-app.listen(8080);
+if (!process.env.NODE_ENV)
+  process.env.NODE_ENV = "development";
+app.listen(settings[process.env.NODE_ENV].db.port);

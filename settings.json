@@ -1,13 +1,15 @@
 {
   "development": {
     "db": {
-      "url": "mongodb://localhost:27017/dreamlist"
+      "url": "mongodb://localhost:27017/dreamlist",
+      "port": "8000"
     }
   },
 
   "production": {
     "db": {
-      "url": "mongodb://mydb.mycompany.com:27017/dreamlist"
+      "url": "mongodb://mydb.mycompany.com:27017/dreamlist",
+      "port": "8080"
     }
   }
 }
