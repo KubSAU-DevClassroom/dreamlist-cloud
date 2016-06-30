@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
 
 var routes = require("./routes");
 
-app.get("/categories", function (req, res) {
+app.get("/categories", function (req, res) {//добавить userId 
   routes.categories.retrieveCategories(req, res);
 });
 
@@ -42,4 +42,4 @@ app.post("/me/save", function () {
 
 app.use("/", express.static(path.join(__dirname, "/static")));
 
-app.listen(8080);
+app.listen(settings[process.env.NODE_ENV].db.port);
