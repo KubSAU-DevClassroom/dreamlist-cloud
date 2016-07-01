@@ -32,12 +32,12 @@ app.post("/categories/update", function (req, res) {
   routes.categories.updateCategory(req,res);
 });
 
-app.get("/me", function () {
-  routes.profile.retrieveProfile(req,res);
+app.post("/me", function (req,res) {
+  routes.profile.addProfile(req,res);
 });
 
-app.post("/me/save", function () {
-  routes.profile.saveProfile(req,res);
+app.post("/me/update", function (req,res) {
+  routes.profile.updateProfile(req,res);
 });
 
 app.use("/", express.static(path.join(__dirname, "/static")));
