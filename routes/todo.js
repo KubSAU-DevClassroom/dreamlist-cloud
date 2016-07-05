@@ -39,23 +39,6 @@ exports.addToDo = function (req, res) {
   });
 };
 
-exports.filterCategory = function (req, res) {
-  todos.filterCategory({
-    categoryId: 1
-  }, function (err, todo) {
-    if (err) {
-      res.json({
-        success: false
-      });
-      return;
-    }
-    res.json({
-      success: true,
-      data: todo
-    });
-  });
-};
-
 exports.updateToDo = function (req, res) {
   todos.updateToDo({
     modified: Date(),
