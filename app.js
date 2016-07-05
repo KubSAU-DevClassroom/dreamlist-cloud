@@ -48,6 +48,10 @@ app.get("/todos", function (req, res) {
   routes.todo.retrieveToDo(req,res);
 });
 
+app.get("/todos/filterCategory", function (req, res) {
+  routes.todo.filterCategory(req,res);
+});
+
 app.post("/todos/add", function (req, res) {
   routes.todo.addToDo(req,res);
 });
