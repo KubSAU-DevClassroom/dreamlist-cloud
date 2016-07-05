@@ -17,8 +17,11 @@ exports.retrieveCategories = function (req, res) {
 
 exports.addCategory = function (req, res) {
   lib.addCategory({
+    created: Date(),
+    modified: Date(),
     name: "Oleh",
-    age: 6
+    userId: 1231231231,
+    color: "red"
   }, function (err, result) {
     if (err) {
       res.json({
