@@ -17,16 +17,13 @@ exports.retrieveCategories = function (req, res) {
 
 exports.addCategory = function (req, res) {
   lib.addCategory({
-<<<<<<< Updated upstream
     name: "Alex",
     age: 1
-=======
     userId: "123",
     created: Date(),
     modified: Date(),
     name: "Kasha",
     color: 'orange'
->>>>>>> Stashed changes
   }, function (err, result) {
     if (err) {
       res.json({
